@@ -1,9 +1,11 @@
 function confirmJoin() {
     document.getElementById("message").innerText =
-        "Hẹn gặp bạn trong buổi chụp kỷ yếu       ( •̀ ω •́ )✧";
+        "Hẹn gặp nhau trong buổi chụp nhoe (≧◡≦) ♡";
 }
 
-const shootDate = new Date("2026-02-12T09:00:00");
+/* ===== ĐẾM NGƯỢC ===== */
+/* 👉 NHỚ SỬA NGÀY */
+const shootDate = new Date("YYYY-MM-DDT07:00:00");
 
 function updateCountdown() {
     const now = new Date();
@@ -11,7 +13,7 @@ function updateCountdown() {
 
     if (diff <= 0) {
         document.getElementById("countdown").innerText =
-            "Hôm nay là ngày chụp kỷ yếu! 🎉";
+            "Là hôm nay đó má";
         return;
     }
 
@@ -20,23 +22,24 @@ function updateCountdown() {
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
 
     document.getElementById("countdown").innerText =
-        `${days} ngày ${hours} giờ ${minutes} phút`;
+        `${days} ngày ${hours} giờ ${minutes} phút ♡`;
 }
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-const icons = ["🎉", "✨"];
+/* ===== HIỆU ỨNG RƠI CUTE ===== */
+const icons = ["✨", "🌸", "🎀", "💫"];
 const container = document.querySelector(".falling-container");
 
 function createFallingIcon() {
     const span = document.createElement("span");
     span.innerText = icons[Math.floor(Math.random() * icons.length)];
     span.style.left = Math.random() * 100 + "vw";
-    span.style.animationDuration = (3 + Math.random() * 3) + "s";
+    span.style.animationDuration = (4 + Math.random() * 3) + "s";
     container.appendChild(span);
 
-    setTimeout(() => span.remove(), 6000);
+    setTimeout(() => span.remove(), 7000);
 }
 
-setInterval(createFallingIcon, 300);
+setInterval(createFallingIcon, 350);
