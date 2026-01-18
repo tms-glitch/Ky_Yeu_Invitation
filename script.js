@@ -1,6 +1,6 @@
 function confirmJoin() {
     document.getElementById("message").innerText =
-        "Hẹn gặp bạn trong buổi chụp kỷ yếu ( •̀ ω •́ )✧";
+        "Hẹn gặp bạn trong buổi chụp kỷ yếu       ( •̀ ω •́ )✧";
 }
 
 const shootDate = new Date("2026-02-12T09:00:00");
