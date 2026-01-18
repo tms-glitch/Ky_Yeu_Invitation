@@ -6,7 +6,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    background: linear-gradient(135deg, #fdf1f5, #f9dfe7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,56 +14,73 @@ body {
 }
 
 .card {
-    background: white;
-    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 28px;
     width: 360px;
-    border-radius: 16px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
     z-index: 2;
 }
 
+h1 {
+    margin: 6px 0;
+}
+
 .subtitle {
-    color: #666;
-    margin-bottom: 20px;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 14px;
+}
+
+.small {
+    font-size: 14px;
+    color: #999;
+}
+
+.divider {
+    margin: 12px 0;
+    color: #e6a6b4;
 }
 
 .info p {
     margin: 6px 0;
+    font-size: 15px;
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px 22px;
+    margin-top: 18px;
+    padding: 10px 24px;
     border: none;
-    border-radius: 20px;
-    background: #ee9ca7;
+    border-radius: 24px;
+    background: #e6a6b4;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #e57373;
+    background: #d9899c;
 }
 
 #message {
     margin-top: 12px;
-    color: green;
+    color: #4caf50;
     font-weight: bold;
 }
 
 #countdown {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 17px;
+    margin: 8px 0;
     font-weight: bold;
-    color: #e57373;
+    color: #d9899c;
 }
 
+/* Hiệu ứng rơi */
 .falling-container span {
     position: absolute;
     top: -10px;
-    font-size: 22px;
+    font-size: 20px;
     animation: fall linear infinite;
 }
 
