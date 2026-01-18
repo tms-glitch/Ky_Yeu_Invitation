@@ -5,7 +5,7 @@ function confirmJoin() {
 
 /* ===== ĐẾM NGƯỢC ===== */
 /* 👉 NHỚ SỬA NGÀY */
-const shootDate = new Date("YYYY-MM-DDT07:00:00");
+const shootDate = new Date("2026-02-12T07:00:00");
 
 function updateCountdown() {
     const now = new Date();
