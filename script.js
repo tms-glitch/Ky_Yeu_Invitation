@@ -1,9 +1,9 @@
 function confirmJoin() {
     document.getElementById("message").innerText =
-        "Hẹn gặp bạn trong buổi chụp kỷ yếu nhé! 📸✨";
+        "Hẹn gặp bạn trong buổi chụp kỷ yếu ( •̀ ω •́ )✧";
 }
 
-const shootDate = new Date("YYYY-MM-DDT07:00:00");
+const shootDate = new Date("2026-02-12T09:00:00");
 
 function updateCountdown() {
     const now = new Date();
