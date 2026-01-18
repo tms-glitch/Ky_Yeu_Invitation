@@ -1,6 +1,6 @@
 function confirmJoin() {
     document.getElementById("message").innerText =
-        "Hẹn gặp nhau trong buổi chụp nhoe (≧◡≦) ♡";
+        "Hẹn gặp nhau trong buổi chụp nhoe （￣︶￣）↗　";
 }
 
 /* ===== ĐẾM NGƯỢC ===== */
@@ -17,12 +17,14 @@ function updateCountdown() {
         return;
     }
 
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+const minutes = Math.floor((diff / (1000 * 60)) % 60);
+const seconds = Math.floor((diff / 1000) % 60);
 
-    document.getElementById("countdown").innerText =
-        `${days} ngày ${hours} giờ ${minutes} phút ♡`;
+document.getElementById("countdown").innerText =
+    `${days} ngày ${hours} giờ ${minutes} phút ${seconds} giây ♡`;
+
 }
 
 setInterval(updateCountdown, 1000);
@@ -42,4 +44,4 @@ function createFallingIcon() {
     setTimeout(() => span.remove(), 7000);
 }
 
-setInterval(createFallingIcon, 350);
+setInterval(createFallingIcon, 175);
