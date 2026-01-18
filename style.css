@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 360px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 6px 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 20px;
+    background: #ee9ca7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e57373;
+}
+
+#message {
+    margin-top: 12px;
+    color: green;
+    font-weight: bold;
+}
+
+#countdown {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #e57373;
+}
+
+.falling-container span {
+    position: absolute;
+    top: -10px;
+    font-size: 22px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+    }
+}
